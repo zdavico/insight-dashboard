@@ -1673,7 +1673,7 @@ function CategoryView({ selectedDatasets, datasetList, colorList, fullLabels }) 
                     fontSize: 12, fontWeight: 600,
                     color: colorList[dsIdx],
                   }}>
-                    {ds.name}: <span style={{ fontFamily: "monospace" }}>{mean?.toFixed(2) ?? "—"}</span>
+                    {ds.name}: <span style={{ fontFamily: "monospace" }}>{mean?.toFixed(2) ?? "\u2014"}</span>
                   </div>
                 );
               })}
@@ -1725,7 +1725,7 @@ function CategoryView({ selectedDatasets, datasetList, colorList, fullLabels }) 
                           fontFamily: "monospace", fontWeight: 600, fontSize: 12,
                           color: "#555", background: bg,
                         }}>
-                          {val?.toFixed(2) ?? "—"}
+                          {val?.toFixed(2) ?? "\u2014"}
                         </td>
                       );
                     })}
@@ -2040,11 +2040,11 @@ export default function App() {
                     onClick={() => setFitMethod("mom")}
                     tooltip={<>
                       <strong>Method of Moments</strong><br /><br />
-                      Computes the sample mean (μ) and standard deviation (σ) directly
+                      Computes the sample mean (\u03BC) and standard deviation (\u03C3) directly
                       from the Likert counts, then draws a normal distribution with
                       those parameters.<br /><br />
-                      <span style={{ color: "#8f8" }}>✓ Instant, clean μ/σ for reporting</span><br />
-                      <span style={{ color: "#f88" }}>✗ Assumes symmetry; can't capture skew</span>
+                      <span style={{ color: "#8f8" }}>\u2713 Instant, clean \u03BC/\u03C3 for reporting</span><br />
+                      <span style={{ color: "#f88" }}>\u2717 Assumes symmetry; can't capture skew</span>
                     </>}
                   >MoM</Btn>
                   <Btn
@@ -2055,8 +2055,8 @@ export default function App() {
                       Finds the Gaussian curve that best fits the 5 observed bar
                       heights by minimizing the squared error between the curve
                       and the bars.<br /><br />
-                      <span style={{ color: "#8f8" }}>✓ Hugs the bars more closely than MoM</span><br />
-                      <span style={{ color: "#f88" }}>✗ Still forces a symmetric bell shape</span>
+                      <span style={{ color: "#8f8" }}>\u2713 Hugs the bars more closely than MoM</span><br />
+                      <span style={{ color: "#f88" }}>\u2717 Still forces a symmetric bell shape</span>
                     </>}
                   >LSQ</Btn>
                   <Btn
@@ -2067,8 +2067,8 @@ export default function App() {
                       Nonparametric: places a small Gaussian "kernel" at every data point
                       and sums them to get a smooth density. No symmetry assumption, so it
                       can capture skew and heavy tails.<br /><br />
-                      <span style={{ color: "#8f8" }}>✓ Faithful to actual data shape</span><br />
-                      <span style={{ color: "#f88" }}>✗ Sensitive to bandwidth choice on discrete data</span>
+                      <span style={{ color: "#8f8" }}>\u2713 Faithful to actual data shape</span><br />
+                      <span style={{ color: "#f88" }}>\u2717 Sensitive to bandwidth choice on discrete data</span>
                     </>}
                   >KDE</Btn>
                   <Btn
@@ -2081,11 +2081,50 @@ export default function App() {
                     when KDE is selected, keeping them as one visual unit.
                     The slider range is 0.1 to 1.5, with anchor tick marks showing
                     where Silverman's and Scott's rules would place the bandwidth
-                    (computed as medians across all visible charts). */}
+                    (computed as medians across all visible charts).
+                    A single (i) icon next to the label explains both rules. */}
                 {fitMethod === "kde" && (
                   <div style={{ marginTop: 8 }}>
-                    <div style={{ fontSize: 10, fontWeight: 600, color: "#666", marginBottom: 4 }}>
+                    <div style={{ fontSize: 10, fontWeight: 600, color: "#666", marginBottom: 4, display: "flex", alignItems: "center", gap: 4 }}>
                       Bandwidth: {kdeBandwidth.toFixed(2)}
+                      {/* Single info icon explaining both Silverman's and Scott's rules */}
+                      <InfoTooltip position="below" width={300} text={<>
+                        <strong>Bandwidth Rules of Thumb</strong><br /><br />
+                        The tick marks below the slider show where two standard
+                        rules would place the bandwidth for this data:<br /><br />
+                        <span style={{ color: "#e85d04" }}><strong>Silverman's Rule</strong></span>
+                        {bandwidthAnchors.silverman != null && (
+                          <span style={{ color: "#e85d04" }}> ({bandwidthAnchors.silverman.toFixed(2)})</span>
+                        )}<br />
+                        <span style={{ fontSize: 10 }}>
+                          Uses both standard deviation and interquartile range.
+                          Often a good starting point for roughly normal data.
+                        </span><br /><br />
+                        <span style={{ color: "#2563eb" }}><strong>Scott's Rule</strong></span>
+                        {bandwidthAnchors.scott != null && (
+                          <span style={{ color: "#2563eb" }}> ({bandwidthAnchors.scott.toFixed(2)})</span>
+                        )}<br />
+                        <span style={{ fontSize: 10 }}>
+                          Based on standard deviation and sample size.
+                          Best suited for large, roughly normal datasets.
+                        </span><br /><br />
+                        <span style={{ fontSize: 10, color: "#aaa" }}>
+                          Values shown are medians across all visible charts.
+                          Both rules are designed for continuous data, so they
+                          tend to undersmooth our discrete 5-point Likert scale.
+                          Click a tick mark to snap the slider to that value.
+                        </span>
+                      </>}>
+                        <span style={{
+                          display: "inline-flex", alignItems: "center", justifyContent: "center",
+                          width: 14, height: 14, borderRadius: "50%",
+                          background: "#e0e0e0", color: "#666",
+                          fontSize: 9, fontWeight: 700, cursor: "help",
+                          lineHeight: 1,
+                        }}>
+                          i
+                        </span>
+                      </InfoTooltip>
                     </div>
                     <div style={{ position: "relative", width: 170 }}>
                       <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
@@ -2102,8 +2141,8 @@ export default function App() {
                         <span style={{ fontSize: 9, color: "#999" }}>1.5</span>
                       </div>
                       {/* Anchor tick marks below the slider for Silverman's and Scott's rule.
-                          Clicking an anchor snaps the slider to that value. Each has an
-                          InfoTooltip explaining what the rule is and why it's shown. */}
+                          Clicking an anchor snaps the slider to that value.
+                          Tooltips have been consolidated into the (i) icon above. */}
                       <div style={{ position: "relative", marginLeft: 18, width: 110, height: 26 }}>
                         {[
                           {
@@ -2111,27 +2150,12 @@ export default function App() {
                             label: "Silv.",
                             color: "#e85d04",
                             tickH: 6,
-                            tip: <>
-                              <strong>Silverman's Rule</strong><br /><br />
-                              Robust bandwidth estimate that uses both standard deviation
-                              and interquartile range. Often a good starting point for
-                              roughly normal data.<br /><br />
-                              Value shown is the median across all visible charts.
-                              Click to snap the slider.
-                            </>
                           },
                           {
                             val: bandwidthAnchors.scott,
                             label: "Scott",
                             color: "#2563eb",
                             tickH: 16,
-                            tip: <>
-                              <strong>Scott's Rule</strong><br /><br />
-                              Bandwidth estimate based on standard deviation and sample
-                              size. Best suited for large, roughly normal datasets.<br /><br />
-                              Value shown is the median across all visible charts.
-                              Click to snap the slider.
-                            </>
                           },
                         ].map(anchor => {
                           if (anchor.val == null) return null;
@@ -2152,21 +2176,18 @@ export default function App() {
                                 cursor: "pointer",
                               }}
                               onClick={() => setKdeBandwidth(Math.round(clamped * 20) / 20)}
+                              title={`${anchor.label} (${anchor.val.toFixed(2)}) \u2014 click to snap`}
                             >
-                              <InfoTooltip text={anchor.tip} width={220} position="below">
-                                <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                                  <div style={{
-                                    width: 2, height: anchor.tickH,
-                                    background: anchor.color, borderRadius: 1,
-                                  }} />
-                                  <span style={{
-                                    fontSize: 8, color: anchor.color, fontWeight: 700,
-                                    whiteSpace: "nowrap", marginTop: 1,
-                                  }}>
-                                    {anchor.label} ({anchor.val.toFixed(2)})
-                                  </span>
-                                </div>
-                              </InfoTooltip>
+                              <div style={{
+                                width: 2, height: anchor.tickH,
+                                background: anchor.color, borderRadius: 1,
+                              }} />
+                              <span style={{
+                                fontSize: 8, color: anchor.color, fontWeight: 700,
+                                whiteSpace: "nowrap", marginTop: 1,
+                              }}>
+                                {anchor.label} ({anchor.val.toFixed(2)})
+                              </span>
                             </div>
                           );
                         })}

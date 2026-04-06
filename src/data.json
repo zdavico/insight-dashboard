@@ -448,147 +448,147 @@
       "name": "Kickoff - Class of 2029",
       "type": "Kickoff",
       "cohort": "Class of 2029",
-      "n": 253,
+      "n": 257,
       "questions": {
         "Identify personal values": {
           "Very untrue of me": 0,
           "Somewhat untrue of me": 3,
           "Neutral": 24,
-          "Somewhat true of me": 101,
-          "Very true of me": 125
+          "Somewhat true of me": 102,
+          "Very true of me": 128
         },
         "Ask for help when needed": {
           "Very untrue of me": 10,
-          "Somewhat untrue of me": 34,
+          "Somewhat untrue of me": 35,
           "Neutral": 48,
-          "Somewhat true of me": 100,
-          "Very true of me": 61
+          "Somewhat true of me": 101,
+          "Very true of me": 63
         },
         "Help others through difficult situations": {
           "Very untrue of me": 8,
           "Somewhat untrue of me": 18,
           "Neutral": 47,
-          "Somewhat true of me": 108,
-          "Very true of me": 72
+          "Somewhat true of me": 111,
+          "Very true of me": 73
         },
         "Recognize when I need help": {
           "Very untrue of me": 4,
           "Somewhat untrue of me": 30,
-          "Neutral": 55,
-          "Somewhat true of me": 93,
-          "Very true of me": 71
+          "Neutral": 56,
+          "Somewhat true of me": 94,
+          "Very true of me": 73
         },
         "Reflect on what's important in life": {
           "Very untrue of me": 2,
           "Somewhat untrue of me": 16,
           "Neutral": 44,
-          "Somewhat true of me": 103,
-          "Very true of me": 88
+          "Somewhat true of me": 104,
+          "Very true of me": 91
         },
         "Goals for work/life integration": {
           "Very untrue of me": 5,
           "Somewhat untrue of me": 24,
           "Neutral": 59,
-          "Somewhat true of me": 104,
-          "Very true of me": 61
+          "Somewhat true of me": 107,
+          "Very true of me": 62
         },
         "Follow a financial plan": {
           "Very untrue of me": 2,
           "Somewhat untrue of me": 9,
           "Neutral": 52,
-          "Somewhat true of me": 95,
-          "Very true of me": 95
+          "Somewhat true of me": 98,
+          "Very true of me": 96
         },
         "Build and manage a monthly budget": {
           "Very untrue of me": 11,
           "Somewhat untrue of me": 35,
-          "Neutral": 60,
-          "Somewhat true of me": 88,
-          "Very true of me": 58
+          "Neutral": 61,
+          "Somewhat true of me": 90,
+          "Very true of me": 59
         },
         "Working knowledge of credit": {
           "Very untrue of me": 22,
-          "Somewhat untrue of me": 35,
+          "Somewhat untrue of me": 37,
           "Neutral": 41,
           "Somewhat true of me": 97,
-          "Very true of me": 58
+          "Very true of me": 60
         },
         "Follow through with a savings plan": {
           "Very untrue of me": 10,
           "Somewhat untrue of me": 14,
           "Neutral": 57,
-          "Somewhat true of me": 88,
-          "Very true of me": 84
+          "Somewhat true of me": 91,
+          "Very true of me": 85
         },
         "Research cost of living": {
           "Very untrue of me": 11,
           "Somewhat untrue of me": 37,
           "Neutral": 48,
-          "Somewhat true of me": 91,
-          "Very true of me": 66
+          "Somewhat true of me": 92,
+          "Very true of me": 69
         },
         "Negotiate salary": {
           "Very untrue of me": 28,
           "Somewhat untrue of me": 63,
           "Neutral": 70,
-          "Somewhat true of me": 59,
-          "Very true of me": 33
+          "Somewhat true of me": 61,
+          "Very true of me": 35
         },
         "Resume confidence": {
           "Very untrue of me": 51,
           "Somewhat untrue of me": 33,
           "Neutral": 50,
-          "Somewhat true of me": 54,
-          "Very true of me": 65
+          "Somewhat true of me": 55,
+          "Very true of me": 68
         },
         "LinkedIn profile": {
-          "Very untrue of me": 141,
-          "Somewhat untrue of me": 23,
+          "Very untrue of me": 143,
+          "Somewhat untrue of me": 24,
           "Neutral": 38,
           "Somewhat true of me": 27,
-          "Very true of me": 24
+          "Very true of me": 25
         },
         "Write a cover letter": {
           "Very untrue of me": 39,
           "Somewhat untrue of me": 62,
           "Neutral": 63,
-          "Somewhat true of me": 53,
-          "Very true of me": 36
+          "Somewhat true of me": 56,
+          "Very true of me": 37
         },
         "Attend a networking event": {
           "Very untrue of me": 13,
           "Somewhat untrue of me": 34,
           "Neutral": 67,
-          "Somewhat true of me": 95,
-          "Very true of me": 44
+          "Somewhat true of me": 96,
+          "Very true of me": 47
         },
         "Elevator pitch": {
           "Very untrue of me": 16,
           "Somewhat untrue of me": 38,
           "Neutral": 55,
-          "Somewhat true of me": 96,
-          "Very true of me": 48
+          "Somewhat true of me": 98,
+          "Very true of me": 50
         },
         "Plan to pay off debts": {
           "Very untrue of me": 10,
           "Somewhat untrue of me": 36,
           "Neutral": 59,
-          "Somewhat true of me": 71,
-          "Very true of me": 77
+          "Somewhat true of me": 73,
+          "Very true of me": 79
         },
         "Job interview confidence": {
           "Very untrue of me": 6,
           "Somewhat untrue of me": 13,
           "Neutral": 55,
-          "Somewhat true of me": 103,
-          "Very true of me": 76
+          "Somewhat true of me": 106,
+          "Very true of me": 77
         },
         "Ready to launch career": {
-          "Very untrue of me": 39,
+          "Very untrue of me": 40,
           "Somewhat untrue of me": 55,
           "Neutral": 64,
-          "Somewhat true of me": 52,
-          "Very true of me": 42
+          "Somewhat true of me": 53,
+          "Very true of me": 44
         }
       }
     },
@@ -596,147 +596,147 @@
       "name": "Exit - Class of 2026",
       "type": "Exit",
       "cohort": "Class of 2026",
-      "n": 253,
+      "n": 273,
       "questions": {
         "Identify personal values": {
-          "Very untrue of me": 0,
+          "Very untrue of me": 1,
           "Somewhat untrue of me": 2,
-          "Neutral": 13,
-          "Somewhat true of me": 77,
-          "Very true of me": 161
+          "Neutral": 15,
+          "Somewhat true of me": 80,
+          "Very true of me": 175
         },
         "Ask for help when needed": {
           "Very untrue of me": 6,
-          "Somewhat untrue of me": 13,
-          "Neutral": 20,
-          "Somewhat true of me": 123,
-          "Very true of me": 91
+          "Somewhat untrue of me": 15,
+          "Neutral": 25,
+          "Somewhat true of me": 132,
+          "Very true of me": 95
         },
         "Help others through difficult situations": {
-          "Very untrue of me": 0,
-          "Somewhat untrue of me": 7,
-          "Neutral": 25,
-          "Somewhat true of me": 124,
-          "Very true of me": 97
+          "Very untrue of me": 1,
+          "Somewhat untrue of me": 8,
+          "Neutral": 30,
+          "Somewhat true of me": 132,
+          "Very true of me": 102
         },
         "Recognize when I need help": {
-          "Very untrue of me": 4,
-          "Somewhat untrue of me": 11,
-          "Neutral": 29,
-          "Somewhat true of me": 120,
-          "Very true of me": 89
+          "Very untrue of me": 5,
+          "Somewhat untrue of me": 14,
+          "Neutral": 32,
+          "Somewhat true of me": 128,
+          "Very true of me": 94
         },
         "Reflect on what's important in life": {
           "Very untrue of me": 2,
-          "Somewhat untrue of me": 10,
-          "Neutral": 27,
-          "Somewhat true of me": 77,
-          "Very true of me": 137
+          "Somewhat untrue of me": 11,
+          "Neutral": 29,
+          "Somewhat true of me": 84,
+          "Very true of me": 147
         },
         "Goals for work/life integration": {
           "Very untrue of me": 6,
-          "Somewhat untrue of me": 21,
+          "Somewhat untrue of me": 25,
           "Neutral": 39,
-          "Somewhat true of me": 89,
-          "Very true of me": 98
+          "Somewhat true of me": 99,
+          "Very true of me": 104
         },
         "Follow a financial plan": {
           "Very untrue of me": 4,
-          "Somewhat untrue of me": 16,
-          "Neutral": 25,
-          "Somewhat true of me": 107,
-          "Very true of me": 101
+          "Somewhat untrue of me": 20,
+          "Neutral": 26,
+          "Somewhat true of me": 116,
+          "Very true of me": 107
         },
         "Build and manage a monthly budget": {
-          "Very untrue of me": 5,
+          "Very untrue of me": 6,
           "Somewhat untrue of me": 17,
-          "Neutral": 39,
-          "Somewhat true of me": 99,
-          "Very true of me": 93
+          "Neutral": 42,
+          "Somewhat true of me": 111,
+          "Very true of me": 97
         },
         "Working knowledge of credit": {
-          "Very untrue of me": 8,
-          "Somewhat untrue of me": 20,
-          "Neutral": 42,
-          "Somewhat true of me": 87,
-          "Very true of me": 96
+          "Very untrue of me": 9,
+          "Somewhat untrue of me": 22,
+          "Neutral": 43,
+          "Somewhat true of me": 96,
+          "Very true of me": 103
         },
         "Follow through with a savings plan": {
-          "Very untrue of me": 4,
-          "Somewhat untrue of me": 10,
-          "Neutral": 34,
-          "Somewhat true of me": 106,
-          "Very true of me": 99
+          "Very untrue of me": 5,
+          "Somewhat untrue of me": 11,
+          "Neutral": 35,
+          "Somewhat true of me": 114,
+          "Very true of me": 108
         },
         "Research cost of living": {
-          "Very untrue of me": 5,
-          "Somewhat untrue of me": 14,
-          "Neutral": 24,
-          "Somewhat true of me": 104,
-          "Very true of me": 106
+          "Very untrue of me": 6,
+          "Somewhat untrue of me": 15,
+          "Neutral": 25,
+          "Somewhat true of me": 112,
+          "Very true of me": 115
         },
         "Negotiate salary": {
-          "Very untrue of me": 12,
-          "Somewhat untrue of me": 43,
-          "Neutral": 59,
-          "Somewhat true of me": 93,
-          "Very true of me": 46
+          "Very untrue of me": 14,
+          "Somewhat untrue of me": 44,
+          "Neutral": 65,
+          "Somewhat true of me": 101,
+          "Very true of me": 49
         },
         "Resume confidence": {
           "Very untrue of me": 6,
-          "Somewhat untrue of me": 12,
-          "Neutral": 19,
-          "Somewhat true of me": 90,
-          "Very true of me": 126
+          "Somewhat untrue of me": 13,
+          "Neutral": 23,
+          "Somewhat true of me": 97,
+          "Very true of me": 134
         },
         "LinkedIn profile": {
-          "Very untrue of me": 11,
-          "Somewhat untrue of me": 18,
-          "Neutral": 35,
-          "Somewhat true of me": 85,
-          "Very true of me": 103
+          "Very untrue of me": 13,
+          "Somewhat untrue of me": 22,
+          "Neutral": 38,
+          "Somewhat true of me": 89,
+          "Very true of me": 110
         },
         "Write a cover letter": {
           "Very untrue of me": 5,
-          "Somewhat untrue of me": 15,
-          "Neutral": 31,
-          "Somewhat true of me": 98,
-          "Very true of me": 104
+          "Somewhat untrue of me": 16,
+          "Neutral": 35,
+          "Somewhat true of me": 104,
+          "Very true of me": 113
         },
         "Attend a networking event": {
-          "Very untrue of me": 12,
-          "Somewhat untrue of me": 14,
-          "Neutral": 34,
-          "Somewhat true of me": 94,
-          "Very true of me": 99
+          "Very untrue of me": 14,
+          "Somewhat untrue of me": 17,
+          "Neutral": 35,
+          "Somewhat true of me": 100,
+          "Very true of me": 107
         },
         "Elevator pitch": {
           "Very untrue of me": 7,
-          "Somewhat untrue of me": 11,
-          "Neutral": 43,
-          "Somewhat true of me": 102,
-          "Very true of me": 89
+          "Somewhat untrue of me": 12,
+          "Neutral": 49,
+          "Somewhat true of me": 108,
+          "Very true of me": 96
         },
         "Plan to pay off debts": {
-          "Very untrue of me": 6,
+          "Very untrue of me": 7,
           "Somewhat untrue of me": 15,
-          "Neutral": 33,
-          "Somewhat true of me": 86,
-          "Very true of me": 112
+          "Neutral": 37,
+          "Somewhat true of me": 96,
+          "Very true of me": 117
         },
         "Job interview confidence": {
           "Very untrue of me": 6,
           "Somewhat untrue of me": 7,
-          "Neutral": 16,
-          "Somewhat true of me": 92,
-          "Very true of me": 132
+          "Neutral": 17,
+          "Somewhat true of me": 98,
+          "Very true of me": 145
         },
         "Ready to launch career": {
           "Very untrue of me": 11,
-          "Somewhat untrue of me": 15,
-          "Neutral": 44,
-          "Somewhat true of me": 90,
-          "Very true of me": 93
+          "Somewhat untrue of me": 16,
+          "Neutral": 45,
+          "Somewhat true of me": 99,
+          "Very true of me": 102
         }
       }
     }
